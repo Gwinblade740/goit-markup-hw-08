@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфоліо</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <div class="page-header__wrapper">
+          <a href="" class="page-logo"
+            ><span class="page-logo__web">Web</span
+            ><span class="page-logo__studio">Studio</span></a
+          >
+          <nav class="page-header__navigation">
+            <ul class="page-header__list">
+              <li class="page-header__item">
+                <a href="./index.html" class="page-header__item">Студія</a>
+              </li>
+              <li class="page-header__item">
+                <a href="#" class="page-header__item page-header__item--active"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="page-header__item">
+                <a href="#" class="page-header__item contackts-item">Контакти</a>
+              </li>
+            </ul>
+            <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+              <svg width="40" height="40" aria-label="Перемикач">
+                <use
+                  class="icon-menu"
+                  href="./hw1_images/icons.svg#icon-menu-burger"
+                ></use>
+              </svg>
+            </button>
+            <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+              <svg width="40" height="40" aria-label="Перемикач">
+                <use
+                    class="icon-cross"
+                    href="./hw1_images/icons.svg#icon-close-burger"
+                  ></use></svg>
+            </button>
+             <div class="menu-mobile">
+                  <ul class="menu-mobile__list">
+                    <li class="item menu-mobile__item">
+                      <a href="./index.html" class="item menu-mobile__item "
+                        >Студія</a
+                      >
+                    </li>
+                    <li class="item menu-mobile__item">
+                      <a href="./portfolio.html" class="item menu-mobile__item"
+                        >Портфоліо</a
+                      >
+                    </li>
+                    <li class="item menu-mobile__item">
+                      <a href="#" class="item menu-mobile__item contackts-item"
+                        >Контакти</a
+                      >
+                    </li>
+                  </ul>
+                  <ul class="contackts-mobile">
+                    <li class="contackts-mobile__item">
+                      <a href="tel:+380961111111" class="contackts-mobile__phone">
+                        +38 096 111 11 11</a
+                      >
+                    </li>
+                    <li class="contackts-mobile__item">
+                      <a href="mailto:info@devstudio.com" class="contackts-mobile__email">
+                          info@devstudio.com</a>
+                    </li>
+                  </ul>
+                  <ul class="socials-mobile">
+                    <li><a href="" class="socials-mobile__link">Instagram</a></li>
+                    <li><a href="" class="socials-mobile__link">Twitter</a></li>
+                    <li><a href="" class="socials-mobile__link">Facebook</a></li>
+                    <li><a href="" class="socials-mobile__link">LinkedIn</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <ul class="studio-info">
+              <li class="studio-info__list">
+                <a href="mailto:info@devstudio.com" class="link studio-info__link"
+                  ><svg class="studio-info__icon" width="16" height="12">
+                    <use href="./hw1_images/icons.svg#icon-message"></use></svg
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="studio-info__list">
+                <a href="tel:+380961111111" class="link studio-info__link"
+                  ><svg class="studio-info__icon" width="10" height="16">
+                    <use href="./hw1_images/icons.svg#icon-phone"></use></svg
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+            </div>
+        </div>
+      </div>
+    </header>
+    <main class="page-assortment">
+      <section class="page-assortment__assortment section">
+        <div class="container">
+          <div class="page-assortment__wrapper">
+            <h2 class="page-assortment__heading heading-hidden">Filter of assortment</h2>
+            <ul class="page-assortment__list">
+              <li class="page-assortment__item">
+                <button type="button" class="page-assortment__button">Усі</button>
+              </li>
+              <li class="page-assortment__item">
+                <button type="button" class="page-assortment__button">Веб-сайти</button>
+              </li>
+              <li class="page-assortment__item">
+                <button type="button" class="page-assortment__button">Додатки</button>
+              </li>
+              <li class="page-assortment__item">
+                <button type="button" class="page-assortment__button">Дизайн</button>
+              </li>
+              <li class="page-assortment__item">
+                <button type="button" class="page-assortment__button">Маркетинг</button>
+              </li>
+            </ul>
+            <ul class="page-assortment__grid">
+              <li class="page-assortment__card ">
+                <a
+                  class="page-assortment__link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <div class="page-assortment__container">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./images/page-assortment/img1_middle@desk1x.webp 1x, ./images/page-assortment/img1_middle@desk2x.webp 2x" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="./images/page-assortment/img1_small@tab1x.webp 1x, ./images/page-assortment/img1_small@tab2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 767px )" srcset="./images/page-assortment/img1_lg@mob1x.webp 1x, ./images/page-assortment/img1_lg@mob2x.webp 2x" type="image/webp">
+                      <img
+                      src="./images/page-assortment/img1.webp"
+                      alt="Технокряк"
+                      class="page-assortment__image"
+                    />
+                    </picture>
+                    <div class="page-assortment__overlay">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну особу.
+                    </div>
+                  </div>
+                  <div class="page-assortment__text">
+                    <h3 class="page-assortment__title">Технокряк</h3>
+                    <p class="page-assortment__description">Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
+              <li class="page-assortment__card">
+                <a
+                  class="page-assortment__link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <div class="page-assortment__container">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./images/page-assortment/img2_middle@desk1x.webp 1x, ./images/page-assortment/img2_middle@desk2x.webp 2x" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="./images/page-assortment/img2_small@tab1x.webp 1x, ./images/page-assortment/img2_small@tab2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 767px )" srcset="./images/page-assortment/img2_lg@mob1x.webp 1x, ./images/page-assortment/img2_lg@mob2x.webp 2x" type="image/webp">
+                      <img
+                      src="./images/page-assortment/img2.webp"
+                      alt="Постер New Orlean vs Golden Star"
+                      class="page-assortment__image"
+                    />
+                    </picture>
+                   
+                    <div class="page-assortment__overlay">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну особу.
+                    </div>
+                  </div>
+                  <div class="page-assortment__text">
+                    <h3 class="page-assortment__title">
+                      Постер New Orlean vs Golden Star
+                    </h3>
+                    <p class="page-assortment__description">Дизайн</p>
+                  </div>
+                </a>
+              </li>
+              <li class="page-assortment__card">
+                <a
+                  class="page-assortment__link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <div class="page-assortment__container">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./images/page-assortment/img3_middle@desk1x.webp 1x, ./images/page-assortment/img3_middle@desk2x.webp 2x" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="./images/page-assortment/img3_small@tab1x.webp 1x, ./images/page-assortment/img3_small@tab2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 767px )" srcset="./images/page-assortment/img3_lg@mob1x.webp 1x, ./images/page-assortment/img3_lg@mob2x.webp 2x" type="image/webp">
+                      <img
+                      src="./images/page-assortment/img3.webp"
+                      alt="Ресторан Seafood"
+                      class="page-assortment__image"
+                    />
+                    </picture>
+                    
+                    <div class="page-assortment__overlay">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну особу.
+                    </div>
+                  </div>
+                  <div class="page-assortment__text">
+                    <h3 class="page-assortment__title">Ресторан Seafood</h3>
+                    <p class="page-assortment__description">Додаток</p>
+                  </div>
+                </a>
+              </li>
+              <li class="page-assortment__card">
+                <a
+                  class="page-assortment__link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <div class="page-assortment__container">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./images/page-assortment/img4_middle@desk1x.webp 1x, ./images/page-assortment/img4_middle@desk2x.webp 2x" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="./images/page-assortment/img4_small@tab1x.webp 1x, ./images/page-assortment/img4_small@tab2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 767px )" srcset="./images/page-assortment/img4_lg@mob1x.webp 1x, ./images/page-assortment/img4_lg@mob2x.webp 2x" type="image/webp">
+                      <img
+                      src="./images/page-assortment/img4.webp"
+                      alt="Проєкт Prime"
+                      class="page-assortment__image"
+                    />
+                    </picture>
+                    
+                    <div class="page-assortment__overlay">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну особу.
+                    </div>
+                  </div>
+                  <div class="page-assortment__text">
+                    <h3 class="page-assortment__title">Проєкт Prime</h3>
+                    <p class="page-assortment__description">Маркетинг</p>
+                  </div>
+                </a>
+              </li>
+              <li class="page-assortment__card">
+                <a
+                  class="page-assortment__link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <div class="page-assortment__container">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./images/page-assortment/img5_middle@desk1x.webp 1x, ./images/page-assortment/img5_middle@desk2x.webp 2x" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="./images/page-assortment/img5_small@tab1x.webp 1x, ./images/page-assortment/img5_small@tab2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 767px )" srcset="./images/page-assortment/img5_lg@mob1x.webp 1x, ./images/page-assortment/img5_lg@mob2x.webp 2x" type="image/webp">
+                      <img
+                      src="./images/page-assortment/img5.webp"
+                      alt="Проєкт Boxes"
+                      class="page-assortment__image"
+                    />
+                    </picture>
+                   
+                    <div class="page-assortment__overlay">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну особу.
+                    </div>
+                  </div>
+                  <div class="page-assortment__text">
+                    <h3 class="page-assortment__title">Проєкт Boxes</h3>
+                    <p class="page-assortment__description">Додаток</p>
+                  </div>
+                </a>
+              </li>
+              <li class="page-assortment__card">
+                <a
+                  class="page-assortment__link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <div class="page-assortment__container">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./images/page-assortment/img6_middle@desk1x.webp 1x, ./images/page-assortment/img6_middle@desk2x.webp 2x" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="./images/page-assortment/img6_small@tab1x.webp 1x, ./images/page-assortment/img6_small@tab2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 767px )" srcset="./images/page-assortment/img6_lg@mob1x.webp 1x, ./images/page-assortment/img6_lg@mob2x.webp 2x" type="image/webp">
+                      <img
+                      src="./images/page-assortment/img6.webp"
+                      alt="Inspiration has no Borders"
+                      class="page-assortment__image"
+                    />
+                    </picture>
+                    <div class="page-assortment__overlay">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну особу.
+                    </div>
+                  </div>
+                  <div class="page-assortment__text">
+                    <h3 class="page-assortment__title">Inspiration has no Borders</h3>
+                    <p class="page-assortment__description">Веб-сайт</p>
+                  </div>
+                </a>
+              </li>
+              <li class="page-assortment__card">
+                <a
+                  class="page-assortment__link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <div class="page-assortment__container">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./images/page-assortment/img7_middle@desk1x.webp 1x, ./images/page-assortment/img7_middle@desk2x.webp 2x" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="./images/page-assortment/img7_small@tab1x.webp 1x, ./images/page-assortment/img7_small@tab2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 767px )" srcset="./images/page-assortment/img7_lg@mob1x.webp 1x, ./images/page-assortment/img7_lg@mob2x.webp 2x" type="image/webp">
+                      <img
+                      src="./images/page-assortment/img7.webp"
+                      alt="Видання Limited Edition"
+                      class="page-assortment__image"
+                    />
+                    </picture>
+                    
+                    <div class="page-assortment__overlay">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну особу.
+                    </div>
+                  </div>
+                  <div class="page-assortment__text">
+                    <h3 class="page-assortment__title">Видання Limited Edition</h3>
+                    <p class="page-assortment__description">Дизайн</p>
+                  </div>
+                </a>
+              </li>
+              <li class="page-assortment__card">
+                <a
+                  class="page-assortment__link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <div class="page-assortment__container">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./images/page-assortment/img8_middle@desk1x.webp 1x, ./images/page-assortment/img8_middle@desk2x.webp 2x" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="./images/page-assortment/img8_small@tab1x.webp 1x, ./images/page-assortment/img8_small@tab2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 767px )" srcset="./images/page-assortment/img8_lg@mob1x.webp 1x, ./images/page-assortment/img8_lg@mob2x.webp 2x" type="image/webp">
+                      <img
+                      src="./images/page-assortment/img8.webp"
+                      alt="Проєкт LAB"
+                      class="page-assortment__image"
+                    /></picture>
+                   
+                    <div class="page-assortment__overlay">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну особу.
+                    </div>
+                  </div>
+                  <div class="page-assortment__text">
+                    <h3 class="page-assortment__title">Проєкт LAB</h3>
+                    <p class="page-assortment__description">Маркетинг</p>
+                  </div>
+                </a>
+              </li>
+              <li class="page-assortment__card">
+                <a
+                  class="page-assortment__link"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                >
+                  <div class="page-assortment__container">
+                    <picture>
+                      <source media="(min-width: 1200px)" srcset="./images/page-assortment/img9_middle@desk1x.webp 1x, ./images/page-assortment/img9_middle@desk2x.webp 2x" type="image/webp">
+                      <source media="(min-width: 768px)" srcset="./images/page-assortment/img9_small@tab1x.webp 1x, ./images/page-assortment/img9_small@tab2x.webp 2x" type="image/webp">
+                      <source media="(max-width: 767px )" srcset="./images/page-assortment/img9_lg@mob1x.webp 1x, ./images/page-assortment/img9_lg@mob2x.webp 2x" type="image/webp">
+                      <img
+                      src="./images/page-assortment/img9.webp"
+                      alt="Growing Business"
+                      class="page-assortment__image"
+                    />
+                    </picture>
+                    
+                    <div class="page-assortment__overlay">
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну особу.
+                    </div>
+                  </div>
+                  <div class="page-assortment__text">
+                    <h3 class="page-assortment__title">Growing Business</h3>
+                    <p class="page-assortment__description">Додаток</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-info">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="info-address">
+            <a href="" class="page-logo page-info__page-logo"
+            ><span class="page-logo__web">Web</span
+            ><span class="page-logo__studio page-logo__studio--white">Studio</span></a
+            <address class="info-container">
+              <ul class="info-container__list">
+                <li class="info-container__item">
+                  <a href="" class="info-container__map">м. Київ, пр-т Лесі Українки, 26</a>
+                </li>
+                <li class="info-container__item">
+                  <a href="mailto:info@example.com" class="info-container__link info-items info-email"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="info-container__item">
+                  <a href="tel:+380961111111" class="info-container__link info-items info-phone"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="info-icons">
+            <p class="calling info-icons__calling">ПРИЄДНУЙТЕСЬ</p>
+            <ul class="info-icons__list">
+              <li class="socials info-icons__socials">
+                <a
+                  class="socials__link"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg class="socials__icon" width="20" height="20">
+                    <use
+                      class="social-social"
+                      href="./hw1_images/icons.svg#icon-instagram"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="socials info-icons__socials">
+                <a
+                  class="socials__link"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg class="socials__icon" width="20" height="20">
+                    <use href="./hw1_images/icons.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="socials info-icons__socials">
+                <a
+                  class="socials__link"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg class="socials__icon" width="20" height="20">
+                    <use href="./hw1_images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="socials info-icons__socials">
+                <a
+                  class="socials__link"
+                  href="https://linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  ><svg class="socials__icon" width="20" height="20">
+                    <use href="./hw1_images/icons.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="form-container">
+          <form class="footer-form" action="">
+            <div class="footer-form__list">
+              <p class="footer-form__subscribe">підпишіться на розсилку</p>
+                <input
+                  type="mail"
+                  class="footer-form__mail"
+                  placeholder="E-mail"
+                  name="mailing-post"
+                />
+            </div>
+            <div class="footer-form__wrapper">
+              <button type="submit" class="form-btn footer-form__form-btn">
+                <span class="form-btn__wrapper">
+                  <span class="form-btn__title">Підписатися</span>
+                  <svg width="24" height="24">
+                    <use href="./hw1_images/icons.svg#icon-send"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+@import "./utils/variables";
+@import "./base/base";
+@import "./base/reset";
+@import "./utils/visually-hidden";
+@import "./utils/placeholders";
+/*Components*/
+@import "./components/page-header";
+@import "./components/logo";
+@import "./components/studio-info";
+@import "./components/page-service";
+@import "./components/page-benefits";
+@import "./components/page-work";
+@import "./components/page-employers";
+@import "./components/regular-customer";
+@import "./components/page-info";
+@import "./components/page-assortment-list";
+@import "./components/page-assortment-cards";
+@import "./components/modal";
