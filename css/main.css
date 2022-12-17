@@ -20,23 +20,24 @@ p {
 }
 
 .container {
-  max-width: 480px;
-  padding: 0px 15px;
-  margin-left: 0;
-  margin-right: 0;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
 }
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    padding: 0px 15px;
-    margin: 0 auto;
   }
 }
 
@@ -254,12 +255,12 @@ img {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100dvh;
+  height: 100vh;
   padding: 48px 40px;
   background-color: #ffffff;
   z-index: 999;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateY(-200%);
+          transform: translateY(-200%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;

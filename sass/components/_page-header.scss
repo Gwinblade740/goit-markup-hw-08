@@ -106,12 +106,12 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100dvh;
+  height: 100vh;
   padding: 48px 40px;
   background-color: $page-background;
   z-index: 999;
 
-  transform: translateY(-100%);
+  transform: translateY(-200%);
   transition: transform 250ms ease-in-out;
 }
 

@@ -15,19 +15,18 @@ p {
   padding: 0;
 }
 .container {
-  max-width: 480px;
-  padding: 0px 15px;
-  margin-left: 0;
-  margin-right: 0;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
   @media screen and (min-width: 768px) {
     max-width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
   }
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
-    padding: 0px 15px;
-    margin: 0 auto;
   }
 }
 
